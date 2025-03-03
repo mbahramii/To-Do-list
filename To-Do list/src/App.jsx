@@ -11,16 +11,20 @@ function App() {
     {id:1 , title : "book1"},
     {id:2 , title : "book2"},
     {id:3 , title : "book3"},
-    {id:4 , title : "book4"},
   ])
 
-  const addTasks=(event) => {
-    
+  const addTasks=(title) => {
+
+    const id = Math.floor(Math.random()*10000)
+
+    const newTask = {id, ...title}
+
+    setTasks([...tasks, newTask])
   }
 
   return (
     <>
-      <AddTasks  nAdd={addTasks} />
+      <AddTasks  onAdd={addTasks} />
       <TaskList tasks={tasks} />
     </>
   )
