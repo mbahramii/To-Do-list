@@ -1,0 +1,40 @@
+.div_addtasks {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+input {
+    background-color: #3171c5;
+    width: 150px;
+    height: 31px;
+    margin-right: 10px;
+    border-radius: 9px;
+    border: 1px solid transparent;
+
+    padding-left: 12px;
+    color: black;
+    font-size: 1em;
+}
+
+button {
+  
+    border-radius: 8px;
+    border: 1px solid transparent;
+    padding: 7px;
+    font-size: 1em;
+    font-weight: 500;
+    font-family: inherit;
+    background-color: #467dca;
+    cursor: pointer;
+    transition: border-color 0.25s;
+  }
+  button:hover {
+    border-color: #646cff;
+  }
+  button:focus,
+  button:focus-visible {
+    outline: 4px auto -webkit-focus-ring-color;
+  }
