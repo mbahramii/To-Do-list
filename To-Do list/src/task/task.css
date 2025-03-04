@@ -1,0 +1,65 @@
+/* 
+.task {
+
+  width: 310px;
+  max-width: 50%;
+  background-color: #4d709f;
+  border-radius: 20px;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;   
+}
+
+.container {
+    width: 90%;
+  }
+  
+@media (max-width: 1300px) {
+    .container {
+      max-width: 600px; 
+    }
+  }
+  
+@media (max-width: 768px) {
+    .container {
+      width: 300px; 
+    }
+  } */
+
+
+  .task {
+    width: 70%; /* تغییر از مقدار ثابت به مقدار درصدی */
+    
+    background-color: #5584c3;
+    border-radius: 20px;
+    height: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+    margin: auto;
+  }
+  
+  .container {
+    width: 80%;
+    max-width: 1200px; /* مقدار پیش‌فرض */
+    margin: 0 auto; /* وسط‌چین کردن */
+  }
+  
+  @media (max-width: 1300px) {
+    .container {
+      width: 70%;
+      max-width: 800px; 
+    }
+  }
+    
+  @media (max-width: 670px) {
+      .container {
+        width: 90%;
+        max-width: 300px;
+      }  
+    .task {
+      width: 100%; /* اطمینان از سازگاری با موبایل */
+    }
+  }
+  
