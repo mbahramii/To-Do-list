@@ -1,5 +1,5 @@
 import { useState } from "react"
-import './AddTargets.css'
+import './AddTasks.css'
 
 const AddTasks = ({onAdd}) => {
     const [title , setTitle] = useState ('')
@@ -7,23 +7,29 @@ const AddTasks = ({onAdd}) => {
     const submitForm = (event)=> {
         event.preventDefault()
         
-        OnAdd({title})
+
+        if (title.trim()) {
+        onAdd({title})
+         }
         
         setTitle("")
     } 
 
     return (
-        <div>
+        <div className="div_addtasks">
             <form onSubmit={submitForm}> 
-                <div>
+                {/* <div> */}
                     <input type="text" 
-                    placeholder="add target" 
+                    placeholder="add task" 
                     value={title}  
                     onChange={(e) => setTitle(e.target.value)}/>
-                </div>
+                {/* </div> */}
+                {/* <div> */}
+
                 <button type="submit">
                     Add
                 </button>
+                {/* </div> */}
             </form>
         </div>
     )
