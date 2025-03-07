@@ -1,9 +1,14 @@
-const Task = ({title}) => {
+import './Task.css'
+
+const Task = ({Task , onDelete}) => {
 
           
     return (
-        <div>
-            <h1>{title}</h1>
+        <div className='task'>
+            <h1>{Task.title}</h1>
+            <button onClick={() =>onDelete(Task.id)}>
+                click
+            </button>
         </div>
 
     )
