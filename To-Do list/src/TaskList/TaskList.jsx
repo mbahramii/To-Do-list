@@ -1,12 +1,12 @@
 import Task from "../task/task";
 
-const TaskList = ({tasks}) => {
+const TaskList = ({tasks , onDelete , checkTask}) => {
     
     console.log(tasks);
     return (
         <div>
             {tasks.map((item) => {
-            return <Task key={item.id} title={item.title} />
+            return <Task key={item.id} Task={item} onDelete={onDelete} checkTask={checkTask} />
             })}
         </div>
     )
