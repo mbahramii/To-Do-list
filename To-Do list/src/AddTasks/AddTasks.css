@@ -3,38 +3,45 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-bottom: 5px;
+  margin-bottom: 10px;
+  margin-top: 40px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 300px;
 }
 
-input {
-    background-color: #3171c5;
-    width: 150px;
-    height: 31px;
-    margin-right: 10px;
-    border-radius: 9px;
-    border: 1px solid transparent;
 
-    padding-left: 12px;
-    color: black;
+input {
+    background-color: #044110;
+    width: fit-content;
+    height: 32px;
+    margin-right: 4px;
+    border-radius: 9px;
+    padding: 0 20px;
+    color: rgb(251, 251, 251);
     font-size: 1em;
+}
+
+input::placeholder {
+  color: rgb(255, 255, 255);
+
 }
 
 button {
   
     border-radius: 8px;
     border: 1px solid transparent;
-    padding: 7px;
+    width: 40px;
+    height: 32px;
     font-size: 1em;
     font-weight: 500;
     font-family: inherit;
-    background-color: #467dca;
+    background-color: #044110;
     cursor: pointer;
-    transition: border-color 0.25s;
+    color: white;
   }
-  button:hover {
-    border-color: #646cff;
+
+  button:active{
+    border-color: aliceblue;
   }
-  button:focus,
-  button:focus-visible {
-    outline: 4px auto -webkit-focus-ring-color;
-  }
+  

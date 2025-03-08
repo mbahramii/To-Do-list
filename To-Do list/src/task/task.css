@@ -1,23 +1,23 @@
 
 
   .task {
-    width: 70%; /* تغییر از مقدار ثابت به مقدار درصدی */
-    
-    background-color: #5584c3;
+    width: 70%; 
+    background-color: hsl(207, 100%, 16%);
     border-radius: 20px;
-    height: 90px;
+    height: 80px;
     display: flex;
-    justify-content: left;
+    justify-content: space-around;
     align-items: center;   
     margin: auto;
     padding-left: 10%;
+    margin-bottom: 10px;
 
   }
   
   .container {
     width: 80%;
-    max-width: 1200px; /* مقدار پیش‌فرض */
-    margin: 0 auto; /* وسط‌چین کردن */
+    max-width: 1200px;
+    margin: 0 auto;
   }
   
   @media (max-width: 2440px) {
@@ -26,7 +26,7 @@
       max-width: 500px; 
     }
     .task {
-      width: 40%; /* اطمینان از سازگاری با موبایل */
+      width: 40%; 
     }
   }
     
@@ -36,7 +36,25 @@
         max-width: 290px;
       }  
     .task {
-      width: 80%; /* اطمینان از سازگاری با موبایل */
+      width: 85%;
     }
   }
   
+
+  .div_delete_and_check{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: end;
+    gap: 10px;
+  }
+
+  .check{
+    width: 25px;
+    height: 25px;
+  }
+
+  .delete{
+    width: 25px;
+    height: 25px;
+  }

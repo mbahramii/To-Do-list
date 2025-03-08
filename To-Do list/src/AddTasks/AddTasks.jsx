@@ -27,7 +27,7 @@ const AddTasks = ({onAdd}) => {
                 {/* <div> */}
 
                 <button type="submit">
-                    Add
+                    add
                 </button>
                 {/* </div> */}
             </form>
